@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dynamic Periodic Table Search Engine</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Periodic Navigator</h1>
+        <label for="searchType">Search By:</label>
+        <select id="searchType">
+            <option value="atomicNumber">Atomic Number</option>
+            <option value="atomicSymbol">Atomic Symbol</option>
+            <option value="atomicName">Atomic Name</option>
+            <option value="atomicWeight">Atomic Weight</option>
+        </select>
+        <br>
+        <label for="searchInput">Enter Search Value:</label>
+        <input type="text" id="searchInput">
+        <br>
+        <button onclick="searchElement()">Search</button>
+        
+        <table id="resultTable">
+            <tr>
+                <th>Atomic Number</th>
+                <th>Atomic Symbol</th>
+                <th>Atomic Name</th>
+                <th>Atomic Weight</th>
+                <th>Block</th>
+                <th>Metallic Property</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
